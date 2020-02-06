@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>로또</title>
+    <title>너 혹쉬 로또 당첨되고 싶니?</title>
 </head>
 <body>
-    LOTTO
+    <h1>LOTTO</h1>
+
+    <form action="{% url 'result' %}">
+        
+        <input type="number" name="number1">
+        <input type="number" name="number2">
+        <input type="number" name="number3">
+        <input type="number" name="number4">
+        <input type="number" name="number5">
+        <input type="number" name="number6">
+
+        <input type="submit" value="시작">
+
+    </form>
 </body>
 </html>

@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>로또 결과</title>
+    <title>너 혹쉬 당첨이니?</title>
 </head>
-<body>
-    RESULT
+<body style="text-align: center">
+
+    <h1 style="color:blue;">[결과]</h1>
+
+    <h3>입력한 수</h3>
+
+    {% for i in number_list %}
+    {{ i }}
+    {% endfor %}
+
+    <h3>랜덤 수</h3>
+    {% for i in random_list %}
+    {{ i }}
+    {% endfor %}
+
+    <h3>맞은 개수</h3>
+    {{count}}개 입니다.
+    <pre></pre>
+    한 번 더 도전하시겠습니까?
+
 </body>
 </html>
